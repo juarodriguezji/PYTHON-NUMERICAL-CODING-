@@ -1,1 +1,16 @@
 Hola Muy buenas a todos aqui Juampa 777 con un nuevo manualcito para mi vida, hoy te traigo el MANUAL DE PYTHON INICIAL Y PANDAS . 
+Primero que todo un concepto valioso que es ambiente virtual o sus siglas (VENV) esto sirve para crear un ambiente aislado para correr aplicaciones
+y que estas no se pisen entre si, digamos si tenemos instalados versiones distintas de la misma libreria o cosas asi.
+ES MUY RECOMENDABLE INICIAR CREANDO ESO , en mi caso puedo tener ambientes configurados para AI,
+
+CREACION VENV : EX LINEA  7, "datos" es el nombre del ambiente virtual
+python -m venv datos
+EJECUCIÓN VENV: EX LINEA 8 , esto nos permite activar el ambiente virtual y correr el codigo con las librerias de ese ambiente
+Despues de instalado nos va a aparecer en la linea de codigo entre parentesis el nombre del VENV
+
+
+INSTALACIÓN Y CARGA DE LIBRERIAS (MASIVA)
+Para cargar varias librerias de una se puede hacer:
+1. crear un archivo con los nombres de las librerias a instalar , uno en cada renglón
+2. Instalación de las librerias EX LINEA 16 : "requerimientos" es el nombre del archivo
+pip install -r .\requerimientos.txt
