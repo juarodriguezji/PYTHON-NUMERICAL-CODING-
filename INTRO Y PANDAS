@@ -99,13 +99,25 @@ ORDENAR COLUMNAS
 AGRUPAR DATOS : GroupBy de Pandas crea una lista de los indices pertenecientes a cada grupo
 1. Variable groupby por el atributo que se quiera en este caso es ciudad  EX L 101
 df.groupby("Ciudad")
+2. Agrupación multiple: groupby(["Categoria1","Categoria2"])
 
 AGREGAR DATOS: Combinar multiples filas de datos en una
 Pandas tiene varias formulas de agregación
 Funcion agg ,toca decirle que hacer en un diccionario
 
+AGREGAR DATOS:
+COLUMNA
+1. Cargar la serie con nombre de la columna df["NombreColumna"]=["A","B"]
+Se agrega de una sin modificar el diccionario inicial
+2. sumarsela de la siguiente forma: df=pd.DataFrame(data)
+
+FILA O REGISTRO : SE USA EL METODO DE CONCAT
+1. Crear el registro con new_row=pd.series({"Llave1":"Valor1"....})
+2.Agregar df=pd.concat([df,new_row.to_frame().T]) // La funcion row.to_frame cambia de serie a dataframe nuestra serie new_row y luego como la serie se crea como columna, la transpone a fila con el ".T"
 
 
 
 
-QUEDAMOS AQUI https://www.youtube.com/watch?v=sL5zhWuIDno&list=PL5C9QKu8AsmUK_7AEP0hSmt-8vcE8gnIB&index=9&ab_channel=Sunday-TheQuant
+
+
+
