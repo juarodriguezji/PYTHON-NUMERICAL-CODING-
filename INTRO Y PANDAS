@@ -14,3 +14,41 @@ Para cargar varias librerias de una se puede hacer:
 1. crear un archivo con los nombres de las librerias a instalar , uno en cada renglón
 2. Instalación de las librerias EX LINEA 16 : "requerimientos" es el nombre del archivo
 pip install -r .\requerimientos.txt
+
+______________________________///_________________________////______________________________///____________//
+
+PANDAS
+
+SERIES: Objetos unidimensionales (vectores), se crean como en EX LINES 23 : "serie" es una lista ( de las que se escriben con []
+serie=pd.Series(serie)
+
+GENERAR DATAFRAME
+DICCIONARIOS O MATRICES : Tienen una Clave que son las columnas y las filas son los valores, se escribe entre {}
+Generar EX LINEA 28
+df=pd.DataFrame(data=NombreDiccionario)
+
+
+EXPORTAR DATA FRAME: EX LINEA 32
+NombreDataFrame.to_csv("NombrequeQuiera.csv")
+
+IMPORTAR DATA FRAME
+1.Generar variable data frame EX LINEA 36, index_col: Toma la columna como indice
+import_df= pd.read_csv("NombreArchivo.csv,index_col=0)
+
+
+MANIPULACION DE DATOS:
+
+SELECCIONAR SOLAMENTE UNA COLUMNA EX LINEA 42
+Columna=df["NombreColumna"]
+
+SELECCIONAR VARIAS COLUMNAS EX L45
+dataframe=[["Nombre","Edad"]]
+
+FILTRAR POR INDICE( filas) EX L48 df=nombre data frame
+fila= df.loc[2]
+
+FILTRAR POR CONDICIONES EX L51 df=nombre data frame : Recordar operadores is,is not , & (And) , | (Or), ==(Igual), != (Diferente/No es igual) 
+FiltradoCondicional=df[df["ColumnaAFiltrar"] condicion]
+
+
+
