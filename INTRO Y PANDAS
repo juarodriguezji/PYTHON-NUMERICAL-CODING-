@@ -50,5 +50,51 @@ fila= df.loc[2]
 FILTRAR POR CONDICIONES EX L51 df=nombre data frame : Recordar operadores is,is not , & (And) , | (Or), ==(Igual), != (Diferente/No es igual) 
 FiltradoCondicional=df[df["ColumnaAFiltrar"] condicion]
 
+FILTRAR MAS DE 2 FILTROS
+1. Generar variable filtro EX L 55
+filtro = () & ()
+ejemplo EX L 57 startswith es de Pandas
+filtro =(df["Edad]>23) & (df["Nombre"].str.startswith("A"))
+2. Pasar el filtro a Python EX L59
+df[filtro]
+
+FILTRO POR QUERY : EX L62 El string entre parentesis es la condicion
+df.query("Edad> 23") 
+Filtro cuando digamos queremos solo la información de ciertas personas , isin es de Panda
+df[df["NombreColumna"].isin(["Ana","Luis"])]
+
+FILTRAR POR RANGO : Metodo between de Pandas
+df[df["Edad"].between(25,35)]
+
+
+MANIPULACION DE ERRORES: 
+
+Pandas FUNCION fillna REEMPLAZAR VALORES FALTANTES
+df_fill= df.fillna(
+{
+"Edad:df.["Edad"].mean() // Quiere decir que si encuentra un valor erroneo reemplazará por la media
+}
+
+BORRAR VALORES FALTANTES : Pandas FUNCION dropna Ejemplo EX L 79
+df_sin_nan= df.dropna()
+
+
+REEMPLAZAR VALORES ESPECIFICOS FUNCION replace de Pandas
+df_reem= df.replace(
+"Ciudad":{None:"Desconocido"} // Si ciudad es un none reemplazar por desconocido
+}
+
+REEMPLAZAR POR INTERPOLACION : FUNCION interpolate
+
+QUITAR DUPLICADOS FUNCION drop_duplicates EX L 90, tiene parametros que permiten quedarse con la primera o ultima ocurrencias
+df_s_dup=df.drop_duplicates()
+
+RENOMBRAR COLUMNAS  Funcion rename EX L 93
+df_2=df.rename(columns={"Nombre":"Name","Edad":"Age")}
+
+ORDENAR COLUMNAS 
+1. columnas_ordenada= ["A","B"] //Serie con nombres en el orden que quiero
+2.ordenado=df[columnas_ordenada]
+
 
 
