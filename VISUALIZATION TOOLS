@@ -1,1 +1,25 @@
+MATPLOTLIB : Graficos 2D y 3D
 
+Importar matplotlib
+import matplotlib.pyplot as plt
+
+Graficar:
+plt.plot(Series1,Series2)
+plt.show()
+
+Grafico dispersion:
+plt.scatter
+
+Grafico barras:
+Se debe dar las categorias y los valores en 2 listas o series separadas
+plt.bar(categorias,valores)
+
+Nombrar ejes y titulo:
+plt.xlabel("")
+plt.ylabel("")
+plt.title("")
+
+plt.style nos deja ver los estilos que tiene disponible
+
+En el momento de la creacion se puede cambiar color de linea , tipo d elinea, marcador,etc)
+plt.plot(x,y,color="red",lineastyle="--", marker="o")
