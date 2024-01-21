@@ -23,3 +23,25 @@ plt.style nos deja ver los estilos que tiene disponible
 
 En el momento de la creacion se puede cambiar color de linea , tipo d elinea, marcador,etc)
 plt.plot(x,y,color="red",lineastyle="--", marker="o")
+
+
+_________________________///______________________________//___________________________///_______________________________
+
+SEABORN
+
+1.Cargar librerias
+import pandas as pd
+import nupy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+Grafico dispersion:
+sns,scatterplot(x="",y="",hue="species", data=data) data es el dataset , hue es el color
+
+Crear una figura // SIRVE PARA CONFIGURAR TAMAÑO DE GRAFICA, NOMBRES DE EJES, PARA PERSONALIZAR MAS
+fig,ax=plt.subplot(figsize=(8,6)) // 8 , 6 son el ancho y el alto
+
+Ridgeplot distribuciones de ciertas medidas:se usa la funcion SNS.KDEPLOT
+sns.kdeplot(data=nombredeldataset["Atributo a gradicar"],label="PONER AQUI LO QUE QUEREMOS QUE DIGA",ax=ax,fill=true )
+
+
