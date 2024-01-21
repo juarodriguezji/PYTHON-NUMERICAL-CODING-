@@ -96,5 +96,16 @@ ORDENAR COLUMNAS
 1. columnas_ordenada= ["A","B"] //Serie con nombres en el orden que quiero
 2.ordenado=df[columnas_ordenada]
 
+AGRUPAR DATOS : GroupBy de Pandas crea una lista de los indices pertenecientes a cada grupo
+1. Variable groupby por el atributo que se quiera en este caso es ciudad  EX L 101
+df.groupby("Ciudad")
+
+AGREGAR DATOS: Combinar multiples filas de datos en una
+Pandas tiene varias formulas de agregación
+Funcion agg ,toca decirle que hacer en un diccionario
 
 
+
+
+
+QUEDAMOS AQUI https://www.youtube.com/watch?v=sL5zhWuIDno&list=PL5C9QKu8AsmUK_7AEP0hSmt-8vcE8gnIB&index=9&ab_channel=Sunday-TheQuant
